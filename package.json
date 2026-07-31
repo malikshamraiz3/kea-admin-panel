@@ -1,0 +1,10 @@
+{
+  "name": "education-admin",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix KEAAdminPanel-frontend run dev",
+    "build": "npm --prefix KEAAdminPanel-frontend run build",
+    "lint": "npm --prefix KEAAdminPanel-frontend run lint",
+    "preview": "npm --prefix KEAAdminPanel-frontend run preview"
+  }
+}
