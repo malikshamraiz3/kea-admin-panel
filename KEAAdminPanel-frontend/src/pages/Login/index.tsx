@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation, Navigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/useAuth";
 
 /* ─── SVG ICONS ─────────────────────────────────────────────── */
 const EyeIcon = () => (
@@ -72,6 +72,7 @@ const LoginPage: React.FC = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- mount animation trigger
     setMounted(true);
   }, []);
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/useAuth";
 import { createSubject, deleteSubject, getSubjectsByClassId } from "../../services/subjectService";
 import type { Subject } from "../../services/subjectService";
 
@@ -304,7 +304,9 @@ const SubjectsPage: React.FC = () => {
   const [logoutConfirm, setLogoutConfirm] = useState(false);
 
   useEffect(() => {
+    
     if (!classId) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- reset state when no class selected
       setSubjects([]);
       setIsLoading(false);
       return;
