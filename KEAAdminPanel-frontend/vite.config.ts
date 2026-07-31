@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://kea-backend.vercel.app",
+        target: "https://kea-backend.vercel.app/api",
         changeOrigin: true,
         secure: true,
       },
