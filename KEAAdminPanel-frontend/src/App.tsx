@@ -4,6 +4,7 @@ import DashboardPage from "./pages/Dashboard";
 import ClassesPage from "./pages/Classes";
 import SubjectsPage from "./pages/Subjects";
 import DocumentsPage from "./pages/Documents";
+import NewsPage from "./pages/News";
 import ProtectedRoute from "./routes/ProtectedRoute";
 
 const App = () => {
@@ -39,6 +40,14 @@ const App = () => {
         element={
           <ProtectedRoute>
             <DocumentsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/news"
+        element={
+          <ProtectedRoute>
+            <NewsPage />
           </ProtectedRoute>
         }
       />

@@ -85,6 +85,7 @@ const navItems = [
   { icon: <BookIcon />,   label: "Classes",     path: "/classes"   },
   { icon: <LayersIcon />, label: "Subjects",    path: "/subjects"  },
   { icon: <FileIcon />,   label: "Documents",   path: "/documents" },
+  { icon: <FileIcon />,   label: "News",        path: "/news"      },
   { icon: <UsersIcon />,  label: "Users",       path: "/users"     },
   { icon: <SettingsIcon />, label: "Settings",  path: "/settings"  },
 ];
